@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Logo Example</title>
+  <title>Pelo de Arame</title>
   </head>
 <body>
 
@@ -26,6 +26,19 @@
       <a class="nav-link" href="#quem-somos"><b>QUEM SOMOS</b></a>
       <a class="nav-link" href="#contactos"><b>CONTACTOS</b></a>
     </nav>
+    <script>
+      // Select all nav links
+      const navLinks = document.querySelectorAll('.nav-link');
+      const menuToggle = document.getElementById('menu-toggle');
+    
+      // Add click event listener to each nav link
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          // Uncheck the checkbox
+          menuToggle.checked = false;
+        });
+      });
+    </script>
     <div class="language-toggle">
       <span id="en" onclick="setLanguage('en')">EN</span> | 
       <span id="pt" class="active" onclick="setLanguage('pt')">PT</span>
@@ -65,10 +78,11 @@
           "domingo": "Sunday",
           "Horário": "Hours",
           "Cuidamos do seu pet com carinho": "We take care of your pet with love",
-          "Todos os direitos reservados": "All rights reserved",
-          "Creado por": "Created by",
           "ESCOVAGENS": "BRUSHINGS",
           "CORTE DE UNHAS": "NAIL CUTTING",
+          "© 2025 Pelo de Arame. Todos os direitos reservados. Creado por Irene Grilo Email: irene.grltech@gmail.com":
+          "© 2025 Pelo de Arame. All rights reserved. Created by Irene Grilo Email: irene.grltech@gmail.com"
+
       };
 
       document.querySelectorAll("b, h1, h2, p, td, .horario, .ft, .info").forEach(el => {
@@ -114,12 +128,21 @@
   <section id="galeria">
     <div><h1 class="display-galeria">GALERIA</h1></div>
     <div class="fotos">
-      <img src="Jock 1.jpg" alt="image 1">
-      <img src="Jock 2.jpg" alt="image 2">
-      <img src="Jock 3.JPG" alt="image 3">
-      <img src="Jock 4.JPG" alt="image 4">
-      <img src="Jock 5.JPG" alt="image 5">
-      <img src="Jock 6.JPG" alt="image 6">
+      <img src="Jock 1.jpg" alt="superstar">
+      <img src="cao 8.jpg" alt="cao strippng">
+      <img src="corte 2.jpg" alt="cao banho tosquia">
+      <img src="cao 1.jpg" alt="corte pelo">
+      <img src="banho 2.jpg" alt="cao banho">
+      <img src="cao 16.png" alt="cao grooming tosa">
+      <img src="cao14.jpg" alt="limpeza animas">
+      <img src="gato 3.png" alt="gato escovagem">
+      <img src="gato 2.jpg" alt="gato corte unhas">
+      <img src="cao 6.jpg" alt="stripping cao">
+      <img src="cao 7.jpg" alt="tosquia stripping">
+      <img src="gato 1.jpg" alt="escovagem gato">
+      <img src="cao 3.jpg" alt="pet hotel">
+      <img src="cao 12.jpg" alt="dog walking">
+      <img src="cao 15.png" alt="corte tosa">
     </div> 
   </section>  
   <section id="quem-somos">
