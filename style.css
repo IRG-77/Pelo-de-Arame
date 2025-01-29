@@ -260,14 +260,14 @@ nav a {
     padding: 20px 10px; /* Padding around the container */
     width: 100%; /* Full width */
     max-width: 100%; /* Ensure it doesn’t exceed the viewport width */
-    height: 300px; /* Set a fixed height to the scrollable area (adjust as needed) */
+    height: 400px; /* Set a fixed height to the scrollable area (adjust as needed) */
     scroll-snap-type: x mandatory; /* Enable snap effect for horizontal scrolling */
+    overflow-y: hidden;
   }
   
   .fotos img {
-    width: auto; /* Maintain aspect ratio */
-    max-width: 350px; /* Set a max-width for images */
-    height: 300px; /* Fixed height for images */
+    width: 350px; /* Maintain aspect ratio */
+    height: 350px; /* Fixed height for images */
     object-fit: cover; /* Ensure images fill the container without distortion */
     scroll-snap-align: center; /* Snap images to the center when scrolling */
     border-radius: 20px; /* Optional: Add rounded corners */
