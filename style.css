@@ -16,6 +16,11 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 #menu-toggle {
   display: none;
 }
@@ -257,7 +262,6 @@ nav a {
     max-width: 100%; /* Ensure it doesn’t exceed the viewport width */
     height: 300px; /* Set a fixed height to the scrollable area (adjust as needed) */
     scroll-snap-type: x mandatory; /* Enable snap effect for horizontal scrolling */
-    overflow-y: hidden;
   }
   
   .fotos img {
@@ -271,11 +275,13 @@ nav a {
   
   .mapa {
     display: none;
+    max-width: 100%;
   }
 
   .mapa-p {
     padding-top: 40px;
     justify-content: center;
+    max-width: 100%;
   }
 
   .horario {
@@ -350,10 +356,6 @@ nav a {
   
   .active {
     font-weight: bold;
-  }
-
-  body {
-    overflow-x: hidden;
   }
 
 }
