@@ -375,6 +375,13 @@ nav a {
   }
 }
 
+@media (max-width: 400px) {
+  html[lang="en"] .tabela td {
+    font-size: 17px; /* Adjust font size as needed */
+  }
+
+}
+
 .display-galeria {
   display: flex;
   justify-content: center;
