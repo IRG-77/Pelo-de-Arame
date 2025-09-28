@@ -332,6 +332,16 @@ nav a {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    padding-left: 16px;   /* side gap on small screens */
+    padding-right: 16px;  /* side gap on small screens */
+  }
+
+  /* add side gap for inline text blocks on small screens */
+  .subtext,
+  .bold,
+  .highlight {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .language-toggle {
