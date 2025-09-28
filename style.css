@@ -79,7 +79,7 @@ nav a {
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1390px) {
   .menu-label {
     display: none;
   }
@@ -237,7 +237,7 @@ nav a {
   margin-top: 0px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1389px) {
   .img-servicos {
     display: flex;
     justify-content: center;
