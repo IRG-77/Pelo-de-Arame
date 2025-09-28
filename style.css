@@ -79,7 +79,7 @@ nav a {
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 964px) {
   .menu-label {
     display: none;
   }
@@ -216,6 +216,18 @@ nav a {
 
 }
 
+/* Reduce nav text/spacing between 951px and 1300px to avoid logo overlap */
+@media (min-width: 965px) and (max-width: 1245px) {
+  nav {
+    padding-right: 140px;
+  }
+  nav a {
+    font-size: 18px;
+    padding: 10px;
+    margin: 0 12px;
+  }
+}
+
 .logo-img {
   display: flex;
   justify-content: center;
@@ -237,7 +249,7 @@ nav a {
   margin-top: 0px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 964px) {
   .img-servicos {
     display: flex;
     justify-content: center;
