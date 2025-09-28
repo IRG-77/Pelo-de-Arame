@@ -51,6 +51,11 @@
       document.getElementById('pt').classList.remove('active');
       document.getElementById(lang).classList.add('active');
 
+      // Persist selection across pages
+      if (window.localStorage) {
+          localStorage.setItem('siteLang', lang);
+      }
+
       const translations = {
           "SERVIÇOS": "SERVICES",
           "GALERIA": "GALLERY",
@@ -139,6 +144,17 @@
           }
       });
   }
+</script>
+<script>
+  // Apply saved language on page load
+  document.addEventListener('DOMContentLoaded', () => {
+      if (window.localStorage) {
+          const savedLang = localStorage.getItem('siteLang');
+          if (savedLang) {
+              setLanguage(savedLang);
+          }
+      }
+  });
 </script>
 
   </header>
