@@ -360,6 +360,31 @@ nav a {
 
 }
 
+/* Ensure gallery uses grid/wrap on the older breakpoint (>=951px) while nav keeps 1390px */
+@media (min-width: 951px) and (max-width: 1360px) {
+  .fotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 2000px;
+    margin: 30px auto;
+    padding: 20px 10px;
+    overflow-x: visible;
+    height: auto;
+    scroll-snap-type: none;
+  }
+  .fotos img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
+
 @media (max-width: 1220px) {
   .language-toggle {
     position: absolute;
