@@ -448,11 +448,13 @@ nav a {
 
 .apresentacao {
   display: flex;
-  justify-content: center;  /* Centers the paragraph horizontally */
+  flex-direction: column;   /* Stack paragraphs vertically */
+  justify-content: center;  /* Centers the paragraphs horizontally */
   align-items: center;      /* Centers vertically if needed */
   text-align: center;       /* Ensures text inside is centered */
   width: 100%;              /* Full width to allow flex centering */
   padding-top: 40px;
+  gap: 20px;               /* Add space between paragraphs */
 }
 
 .apresentacao p {
@@ -467,6 +469,10 @@ nav a {
   border-radius: 15px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   overflow-wrap: break-word; 
+}
+
+.apresentacao p:last-child {
+  margin-bottom: 40px;  /* Add space below the last paragraph */
 }
 
 footer {
